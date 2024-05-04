@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Two: CSS Font Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="practiceone.html">Practice One</a>
+        <a href="practicetwo.html">Practice Two</a>
+        <a href="practicethree.html">Practice Three</a>
+        <a href="practicefour.html">Practice Four (PHP)</a>
+    </nav>
+    <header>
+        <h1>CSS Font Control</h1>
+    </header>
+    <div class="content">
+        <p>Welcome to our website! We offer a wide range of products to suit your needs. Whether you're looking for the latest gadgets or stylish fashion items, we've got you covered.</p>
+    </div>
+    <div class="controls">
+        <label for="colorInput">Enter RGB color (e.g., 255, 0, 0):</label>
+        <input type="text" id="colorInput">
+        <label for="borderWidth">Enter border width:</label>
+        <input type="number" id="borderWidth">
+        <button id="applyStyles">Apply Styles</button>
+    </div>
+    <script>
+        // JavaScript code
+        document.getElementById('applyStyles').addEventListener('click', function() {
+            var color = document.getElementById('colorInput').value;
+            var borderWidth = document.getElementById('borderWidth').value;
+
+            var content = document.querySelector('.content');
+            content.style.color = 'rgb(' + color + ')';
+            content.style.borderColor = 'rgb(' + color + ')';
+            content.style.borderWidth = borderWidth + 'px';
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 CSS Font Control</p>
+    </footer>
+</body>
+</html>

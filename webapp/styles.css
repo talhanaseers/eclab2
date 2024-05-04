@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Practice One styles */
+h2 {
+    color: #333;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Practice Two styles */
+.content {
+    padding: 20px;
+    border: 1px solid #333;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Practice Three styles */
+.password-verification {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    margin-right: 10px;
+}
+
+/* Practice Four styles */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}

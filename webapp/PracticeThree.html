@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Three: JavaScript Password Verification</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="practiceone.html">Practice One</a>
+        <a href="practicetwo.html">Practice Two</a>
+        <a href="practicethree.html">Practice Three</a>
+        <a href="practicefour.html">Practice Four (PHP)</a>
+    </nav>
+    <header>
+        <h1>JavaScript Password Verification</h1>
+    </header>
+    
+    <section class="password-verification">
+        <input type="password" id="password1" placeholder="Enter password">
+        <input type="password" id="password2" placeholder="Re-enter password">
+        <button onclick="verifyPassword()">Verify</button>
+        <p id="message"></p>
+    </section>
+
+    <script>
+        function verifyPassword() {
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+
+            if (password1.length < 8 || password1 !== password2) {
+                alert("Passwords must be at least eight characters long and match.");
+            } else {
+                document.getElementById("message").innerHTML = "Passwords matched.";
+            }
+        }
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2024 JavaScript Password Verification</p>
+    </footer>
+</body>
+</html>
